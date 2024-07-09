@@ -17,3 +17,23 @@ D:\Canapi_Joshua_Intern_PUPSMB\StockCounterBackOffice\StockCounterBackOffice\Sto
 D:\Canapi_Joshua_Intern_PUPSMB\StockCounterBackOffice\StockCounterBackOffice\StockCounterBackOffice\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
 D:\Canapi_Joshua_Intern_PUPSMB\StockCounterBackOffice\StockCounterBackOffice\StockCounterBackOffice\obj\Debug\net8.0-windows\StockCounterBackOffice.csproj.AssemblyReference.cache
 D:\Canapi_Joshua_Intern_PUPSMB\StockCounterBackOffice\StockCounterBackOffice\StockCounterBackOffice\obj\Debug\net8.0-windows\StockCou.3D3DF5E1.Up2Date
+D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\bin\Debug\net8.0-windows\StockCounterBackOffice.exe
+D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\bin\Debug\net8.0-windows\StockCounterBackOffice.deps.json
+D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\bin\Debug\net8.0-windows\StockCounterBackOffice.runtimeconfig.json
+D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\bin\Debug\net8.0-windows\StockCounterBackOffice.dll
+D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\bin\Debug\net8.0-windows\StockCounterBackOffice.pdb
+D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\obj\Debug\net8.0-windows\StockCounterBackOffice.csproj.AssemblyReference.cache
+D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\obj\Debug\net8.0-windows\StockCounterBackOffice.Form1.resources
+D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\obj\Debug\net8.0-windows\StockCounterBackOffice.csproj.GenerateResource.cache
+D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\obj\Debug\net8.0-windows\StockCounterBackOffice.GeneratedMSBuildEditorConfig.editorconfig
+D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\obj\Debug\net8.0-windows\StockCounterBackOffice.AssemblyInfoInputs.cache
+D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\obj\Debug\net8.0-windows\StockCounterBackOffice.AssemblyInfo.cs
+D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\obj\Debug\net8.0-windows\StockCounterBackOffice.csproj.CoreCompileInputs.cache
+D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\obj\Debug\net8.0-windows\StockCounterBackOffice.sourcelink.json
+D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\obj\Debug\net8.0-windows\StockCou.3D3DF5E1.Up2Date
+D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\obj\Debug\net8.0-windows\StockCounterBackOffice.dll
+D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\obj\Debug\net8.0-windows\refint\StockCounterBackOffice.dll
+D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\obj\Debug\net8.0-windows\StockCounterBackOffice.pdb
+D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\obj\Debug\net8.0-windows\StockCounterBackOffice.genruntimeconfig.cache
+D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\obj\Debug\net8.0-windows\ref\StockCounterBackOffice.dll

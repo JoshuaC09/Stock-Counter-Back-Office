@@ -63,11 +63,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Canapi_Joshua_Intern_PUPSMB\\StockCounterBackOffice\\StockCounterBackOffice\\StockCounterBackOffice\\StockCounterBackOffice.csproj",
+      "projectUniqueName": "D:\\Canapi_Joshua_Intern_PUPSMB\\MAUI BACK OFFICE\\StockCounterBackOffice\\StockCounterBackOffice.csproj",
       "projectName": "StockCounterBackOffice",
-      "projectPath": "D:\\Canapi_Joshua_Intern_PUPSMB\\StockCounterBackOffice\\StockCounterBackOffice\\StockCounterBackOffice\\StockCounterBackOffice.csproj",
+      "projectPath": "D:\\Canapi_Joshua_Intern_PUPSMB\\MAUI BACK OFFICE\\StockCounterBackOffice\\StockCounterBackOffice.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Canapi_Joshua_Intern_PUPSMB\\StockCounterBackOffice\\StockCounterBackOffice\\StockCounterBackOffice\\obj\\",
+      "outputPath": "D:\\Canapi_Joshua_Intern_PUPSMB\\MAUI BACK OFFICE\\StockCounterBackOffice\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
