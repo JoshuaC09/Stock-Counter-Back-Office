@@ -37,3 +37,15 @@ D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\obj\Debug
 D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\obj\Debug\net8.0-windows\StockCounterBackOffice.pdb
 D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\obj\Debug\net8.0-windows\StockCounterBackOffice.genruntimeconfig.cache
 D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\obj\Debug\net8.0-windows\ref\StockCounterBackOffice.dll
+D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\bin\Debug\net8.0-windows\EPPlus.dll
+D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\bin\Debug\net8.0-windows\EPPlus.Interfaces.dll
+D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\bin\Debug\net8.0-windows\EPPlus.System.Drawing.dll
+D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.dll
+D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Json.dll
+D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\bin\Debug\net8.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\bin\Debug\net8.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\bin\Debug\net8.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\bin\Debug\net8.0-windows\Microsoft.IO.RecyclableMemoryStream.dll

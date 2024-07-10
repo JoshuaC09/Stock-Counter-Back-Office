@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using StockCounterBackOffice.Models;
+using System.Net.Http;
 using System.Text;
 
 namespace StockCounterBackOffice.Services
@@ -14,7 +15,6 @@ namespace StockCounterBackOffice.Services
         public async Task<bool> SetConnectionStringAsync(string connectionString)
         {
             var _baseUrl = GlobalVariable.BaseAddress.ToString();
-            await SetAuthorizationHeaderAsync();
             var encodedConnectionString = System.Net.WebUtility.UrlEncode(connectionString);
             var content = new StringContent(JsonConvert.SerializeObject(new { ConnectionString = encodedConnectionString }), Encoding.UTF8, "application/json");
             var response = await _httpClient.PostAsync($"{_baseUrl}api/Database/SetConnectionString", content);
@@ -41,6 +41,17 @@ namespace StockCounterBackOffice.Services
             await SetAuthorizationHeaderAsync();
             var response = await _httpClient.PostAsync($"{baseUrl}api/Inventory/post", null);
             response.EnsureSuccessStatusCode();
+        }
+
+        public async Task<List<ExportedItem>> ExportInventoryAsync()
+        {
+            var baseUrl = GlobalVariable.BaseAddress.ToString();
+            await SetAuthorizationHeaderAsync();
+            var response = await _httpClient.PostAsync($"{baseUrl}api/Inventory/export", null);
+            response.EnsureSuccessStatusCode();
+
+            var content = await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<List<ExportedItem>>(content);
         }
     }
 }
