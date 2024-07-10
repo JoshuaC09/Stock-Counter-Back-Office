@@ -18,7 +18,6 @@ namespace StockCounterBackOffice
             InitializeComponent();
             DisableOtherButtons();
 
-            // Initialize the loadingLabel
             loadingLabel = new Label()
             {
                 Text = "Loading, please wait...",
@@ -27,7 +26,7 @@ namespace StockCounterBackOffice
             };
             this.Controls.Add(loadingLabel);
 
-            // Set the loadingLabel position
+        
             UpdateLoadingLabelPosition();
 
             string configFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "config.bgc");
@@ -75,7 +74,7 @@ namespace StockCounterBackOffice
 
         private async void InitializeButton_Click(object sender, EventArgs e)
         {
-            var result = MessageBox.Show("Are you sure you want to initialize the inventory?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            var result = MessageBox.Show("Are you sure you want to delete all inventory data?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (result == DialogResult.Yes)
             {
                 try
@@ -85,7 +84,7 @@ namespace StockCounterBackOffice
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"An error occurred while initializing the inventory:\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"An error occurred while deleting the inventory:\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -107,7 +106,6 @@ namespace StockCounterBackOffice
                 }
             }
         }
-
         private async void ExportButton_Click(object sender, EventArgs e)
         {
             try
@@ -123,15 +121,42 @@ namespace StockCounterBackOffice
                 {
                     if (sfd.ShowDialog() == DialogResult.OK)
                     {
-                        ExcelPackage.LicenseContext = LicenseContext.NonCommercial; 
+                        ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
 
                         using (var package = new OfficeOpenXml.ExcelPackage())
                         {
                             var worksheet = package.Workbook.Worksheets.Add("Inventory");
-                            worksheet.Cells["A1"].LoadFromCollection(exportedItems, true);
+
+                            var headers = new string[]
+                            {
+                        "Item No", "Item User Define", "Barcode", "Description",
+                        "BUOM", "Stocks(Pcs)", "Lot #", "Expiration",
+                        "Variance", "Rack", "CFactor", "Cntr"
+                            };
+
+                            for (int i = 0; i < headers.Length; i++)
+                            {
+                                worksheet.Cells[1, i + 1].Value = headers[i];
+                            }
 
                          
-                            using (var range = worksheet.Cells["A1:L1"]) 
+                            for (int i = 0; i < exportedItems.Count; i++)
+                            {
+                                worksheet.Cells[i + 2, 1].Value = exportedItems[i].ItemNo;
+                                worksheet.Cells[i + 2, 2].Value = exportedItems[i].ItemUserDefine;
+                                worksheet.Cells[i + 2, 3].Value = exportedItems[i].Barcode;
+                                worksheet.Cells[i + 2, 4].Value = exportedItems[i].Description;
+                                worksheet.Cells[i + 2, 5].Value = exportedItems[i].BUOM;
+                                worksheet.Cells[i + 2, 6].Value = exportedItems[i].Stocks;
+                                worksheet.Cells[i + 2, 7].Value = exportedItems[i].Lot;
+                                worksheet.Cells[i + 2, 8].Value = exportedItems[i].Expiration;
+                                worksheet.Cells[i + 2, 9].Value = exportedItems[i].Variance;
+                                worksheet.Cells[i + 2, 10].Value = exportedItems[i].Rack;
+                                worksheet.Cells[i + 2, 11].Value = exportedItems[i].CFactor;
+                                worksheet.Cells[i + 2, 12].Value = exportedItems[i].Counter;
+                            }
+
+                            using (var range = worksheet.Cells["A1:L1"])
                             {
                                 range.Style.Fill.PatternType = OfficeOpenXml.Style.ExcelFillStyle.Solid;
                                 range.Style.Fill.BackgroundColor.SetColor(System.Drawing.Color.Yellow);
@@ -148,7 +173,6 @@ namespace StockCounterBackOffice
                 MessageBox.Show($"An error occurred while exporting the inventory:\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
 
         private void DisableOtherButtons()
         {

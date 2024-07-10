@@ -37,32 +37,36 @@
             // 
             // InitializeButton
             // 
+            InitializeButton.BackColor = Color.Red;
+            InitializeButton.BackgroundImageLayout = ImageLayout.None;
             InitializeButton.Location = new Point(108, 118);
             InitializeButton.Name = "InitializeButton";
             InitializeButton.Size = new Size(94, 29);
             InitializeButton.TabIndex = 0;
             InitializeButton.Text = "Delete";
-            InitializeButton.UseVisualStyleBackColor = true;
+            InitializeButton.UseVisualStyleBackColor = false;
             InitializeButton.Click += InitializeButton_Click;
             // 
             // NewButton
             // 
+            NewButton.BackColor = Color.Blue;
             NewButton.Location = new Point(397, 118);
             NewButton.Name = "NewButton";
             NewButton.Size = new Size(94, 29);
             NewButton.TabIndex = 1;
             NewButton.Text = "New";
-            NewButton.UseVisualStyleBackColor = true;
+            NewButton.UseVisualStyleBackColor = false;
             NewButton.Click += NewButton_Click;
             // 
             // ExportButton
             // 
+            ExportButton.BackColor = Color.Lime;
             ExportButton.Location = new Point(263, 118);
             ExportButton.Name = "ExportButton";
             ExportButton.Size = new Size(94, 29);
             ExportButton.TabIndex = 2;
             ExportButton.Text = "Export";
-            ExportButton.UseVisualStyleBackColor = true;
+            ExportButton.UseVisualStyleBackColor = false;
             ExportButton.Click += ExportButton_Click;
             // 
             // LoadConfigFileButton
@@ -89,6 +93,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.HotTrack;
             ClientSize = new Size(602, 330);
             Controls.Add(label1);
             Controls.Add(LoadConfigFileButton);
