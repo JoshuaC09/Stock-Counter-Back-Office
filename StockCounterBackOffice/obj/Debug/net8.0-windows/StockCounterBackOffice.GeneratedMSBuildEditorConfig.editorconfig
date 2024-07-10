@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = StockCounterBackOffice
-build_property.ProjectDir = C:\ESTEBAN_JASMINE_PUPSMB\C#\MAUI\Stock-Counter-Back-Office\StockCounterBackOffice\
+build_property.ProjectDir = D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
