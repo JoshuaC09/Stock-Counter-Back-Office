@@ -1134,28 +1134,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\admin\\.nuget\\packages\\": {},
-    "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\BGC-JO\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Canapi_Joshua_Intern_PUPSMB\\MAUI BACK OFFICE\\StockCounterBackOffice\\StockCounterBackOffice.csproj",
+      "projectUniqueName": "C:\\ESTEBAN_JASMINE_PUPSMB\\C#\\MAUI\\Stock-Counter-Back-Office\\StockCounterBackOffice\\StockCounterBackOffice.csproj",
       "projectName": "StockCounterBackOffice",
-      "projectPath": "D:\\Canapi_Joshua_Intern_PUPSMB\\MAUI BACK OFFICE\\StockCounterBackOffice\\StockCounterBackOffice.csproj",
-      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Canapi_Joshua_Intern_PUPSMB\\MAUI BACK OFFICE\\StockCounterBackOffice\\obj\\",
+      "projectPath": "C:\\ESTEBAN_JASMINE_PUPSMB\\C#\\MAUI\\Stock-Counter-Back-Office\\StockCounterBackOffice\\StockCounterBackOffice.csproj",
+      "packagesPath": "C:\\Users\\BGC-JO\\.nuget\\packages\\",
+      "outputPath": "C:\\ESTEBAN_JASMINE_PUPSMB\\C#\\MAUI\\Stock-Counter-Back-Office\\StockCounterBackOffice\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
+        "C:\\Users\\BGC-JO\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1164,7 +1159,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
