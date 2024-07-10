@@ -3,40 +3,52 @@
   "WorkspaceRootPath": "D:\\Canapi_Joshua_Intern_PUPSMB\\MAUI BACK OFFICE\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|D:\\Canapi_Joshua_Intern_PUPSMB\\MAUI BACK OFFICE\\stockcounterbackoffice\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|solutionrelative:stockcounterbackoffice\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|d:\\canapi_joshua_intern_pupsmb\\maui back office\\stockcounterbackoffice\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|solutionrelative:stockcounterbackoffice\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|d:\\canapi_joshua_intern_pupsmb\\maui back office\\stockcounterbackoffice\\models\\exporteditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|solutionrelative:stockcounterbackoffice\\models\\exporteditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|d:\\canapi_joshua_intern_pupsmb\\maui back office\\stockcounterbackoffice\\models\\globalvariable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|solutionrelative:stockcounterbackoffice\\models\\globalvariable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|d:\\canapi_joshua_intern_pupsmb\\maui back office\\stockcounterbackoffice\\models\\securitykeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|solutionrelative:stockcounterbackoffice\\models\\securitykeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|d:\\canapi_joshua_intern_pupsmb\\maui back office\\stockcounterbackoffice\\models\\tokenresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|solutionrelative:stockcounterbackoffice\\models\\tokenresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|d:\\canapi_joshua_intern_pupsmb\\maui back office\\stockcounterbackoffice\\models\\globalvariable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|solutionrelative:stockcounterbackoffice\\models\\globalvariable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|d:\\canapi_joshua_intern_pupsmb\\maui back office\\stockcounterbackoffice\\models\\exporteditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|solutionrelative:stockcounterbackoffice\\models\\exporteditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|d:\\canapi_joshua_intern_pupsmb\\maui back office\\stockcounterbackoffice\\helpers\\stockhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|solutionrelative:stockcounterbackoffice\\helpers\\stockhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|d:\\canapi_joshua_intern_pupsmb\\maui back office\\stockcounterbackoffice\\helpers\\connectionstringhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|solutionrelative:stockcounterbackoffice\\helpers\\connectionstringhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|d:\\canapi_joshua_intern_pupsmb\\maui back office\\stockcounterbackoffice\\models\\securitykeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|solutionrelative:stockcounterbackoffice\\models\\securitykeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|d:\\canapi_joshua_intern_pupsmb\\maui back office\\stockcounterbackoffice\\services\\inventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|solutionrelative:stockcounterbackoffice\\services\\inventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|d:\\canapi_joshua_intern_pupsmb\\maui back office\\stockcounterbackoffice\\interfaces\\isecurity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|solutionrelative:stockcounterbackoffice\\interfaces\\isecurity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|d:\\canapi_joshua_intern_pupsmb\\maui back office\\stockcounterbackoffice\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|solutionrelative:stockcounterbackoffice\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|d:\\canapi_joshua_intern_pupsmb\\maui back office\\stockcounterbackoffice\\helpers\\connectionstringhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|solutionrelative:stockcounterbackoffice\\helpers\\connectionstringhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|d:\\canapi_joshua_intern_pupsmb\\maui back office\\stockcounterbackoffice\\services\\httpservicebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|solutionrelative:stockcounterbackoffice\\services\\httpservicebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|d:\\canapi_joshua_intern_pupsmb\\maui back office\\stockcounterbackoffice\\interfaces\\isecurity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|solutionrelative:stockcounterbackoffice\\interfaces\\isecurity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|d:\\canapi_joshua_intern_pupsmb\\maui back office\\stockcounterbackoffice\\security\\securityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -44,18 +56,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\admin\\.nuget\\packages\\epplus\\7.2.1\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|d:\\canapi_joshua_intern_pupsmb\\maui back office\\stockcounterbackoffice\\services\\httpservicebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|solutionrelative:stockcounterbackoffice\\services\\httpservicebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|d:\\canapi_joshua_intern_pupsmb\\maui back office\\stockcounterbackoffice\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|solutionrelative:stockcounterbackoffice\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|d:\\canapi_joshua_intern_pupsmb\\maui back office\\stockcounterbackoffice\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7F3E5DDF-C2F2-48BD-B366-24A60678D4EF}|StockCounterBackOffice\\StockCounterBackOffice.csproj|solutionrelative:stockcounterbackoffice\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -65,7 +65,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -73,77 +73,71 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "ExportedItem.cs",
               "DocumentMoniker": "D:\\Canapi_Joshua_Intern_PUPSMB\\MAUI BACK OFFICE\\StockCounterBackOffice\\Models\\ExportedItem.cs",
               "RelativeDocumentMoniker": "StockCounterBackOffice\\Models\\ExportedItem.cs",
               "ToolTip": "D:\\Canapi_Joshua_Intern_PUPSMB\\MAUI BACK OFFICE\\StockCounterBackOffice\\Models\\ExportedItem.cs",
               "RelativeToolTip": "StockCounterBackOffice\\Models\\ExportedItem.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T03:17:00.886Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-10T03:17:00.886Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "readme.txt",
               "DocumentMoniker": "C:\\Users\\admin\\.nuget\\packages\\epplus\\7.2.1\\readme.txt",
               "ToolTip": "C:\\Users\\admin\\.nuget\\packages\\epplus\\7.2.1\\readme.txt",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-07-10T03:14:40.075Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-10T03:14:40.075Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "SecurityService.cs",
               "DocumentMoniker": "D:\\Canapi_Joshua_Intern_PUPSMB\\MAUI BACK OFFICE\\StockCounterBackOffice\\Security\\SecurityService.cs",
               "RelativeDocumentMoniker": "StockCounterBackOffice\\Security\\SecurityService.cs",
               "ToolTip": "D:\\Canapi_Joshua_Intern_PUPSMB\\MAUI BACK OFFICE\\StockCounterBackOffice\\Security\\SecurityService.cs",
               "RelativeToolTip": "StockCounterBackOffice\\Security\\SecurityService.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T02:52:29.435Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-10T02:52:29.435Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "ISecurity.cs",
               "DocumentMoniker": "D:\\Canapi_Joshua_Intern_PUPSMB\\MAUI BACK OFFICE\\StockCounterBackOffice\\Interfaces\\ISecurity.cs",
               "RelativeDocumentMoniker": "StockCounterBackOffice\\Interfaces\\ISecurity.cs",
               "ToolTip": "D:\\Canapi_Joshua_Intern_PUPSMB\\MAUI BACK OFFICE\\StockCounterBackOffice\\Interfaces\\ISecurity.cs",
               "RelativeToolTip": "StockCounterBackOffice\\Interfaces\\ISecurity.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T02:49:23.898Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-10T02:49:23.898Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "SecurityKeys.cs",
               "DocumentMoniker": "D:\\Canapi_Joshua_Intern_PUPSMB\\MAUI BACK OFFICE\\StockCounterBackOffice\\Models\\SecurityKeys.cs",
               "RelativeDocumentMoniker": "StockCounterBackOffice\\Models\\SecurityKeys.cs",
               "ToolTip": "D:\\Canapi_Joshua_Intern_PUPSMB\\MAUI BACK OFFICE\\StockCounterBackOffice\\Models\\SecurityKeys.cs",
               "RelativeToolTip": "StockCounterBackOffice\\Models\\SecurityKeys.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T02:49:21.055Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-10T02:49:21.055Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "GlobalVariable.cs",
               "DocumentMoniker": "D:\\Canapi_Joshua_Intern_PUPSMB\\MAUI BACK OFFICE\\StockCounterBackOffice\\Models\\GlobalVariable.cs",
               "RelativeDocumentMoniker": "StockCounterBackOffice\\Models\\GlobalVariable.cs",
               "ToolTip": "D:\\Canapi_Joshua_Intern_PUPSMB\\MAUI BACK OFFICE\\StockCounterBackOffice\\Models\\GlobalVariable.cs",
               "RelativeToolTip": "StockCounterBackOffice\\Models\\GlobalVariable.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T02:49:20.382Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-10T02:49:20.382Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "TokenResponse.cs",
               "DocumentMoniker": "D:\\Canapi_Joshua_Intern_PUPSMB\\MAUI BACK OFFICE\\StockCounterBackOffice\\Models\\TokenResponse.cs",
               "RelativeDocumentMoniker": "StockCounterBackOffice\\Models\\TokenResponse.cs",
@@ -155,39 +149,36 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 9,
               "Title": "TokenService.cs",
               "DocumentMoniker": "D:\\Canapi_Joshua_Intern_PUPSMB\\MAUI BACK OFFICE\\StockCounterBackOffice\\Services\\TokenService.cs",
               "RelativeDocumentMoniker": "StockCounterBackOffice\\Services\\TokenService.cs",
               "ToolTip": "D:\\Canapi_Joshua_Intern_PUPSMB\\MAUI BACK OFFICE\\StockCounterBackOffice\\Services\\TokenService.cs",
               "RelativeToolTip": "StockCounterBackOffice\\Services\\TokenService.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T02:47:02.283Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-10T02:47:02.283Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "InventoryService.cs",
               "DocumentMoniker": "D:\\Canapi_Joshua_Intern_PUPSMB\\MAUI BACK OFFICE\\StockCounterBackOffice\\Services\\InventoryService.cs",
               "RelativeDocumentMoniker": "StockCounterBackOffice\\Services\\InventoryService.cs",
               "ToolTip": "D:\\Canapi_Joshua_Intern_PUPSMB\\MAUI BACK OFFICE\\StockCounterBackOffice\\Services\\InventoryService.cs",
               "RelativeToolTip": "StockCounterBackOffice\\Services\\InventoryService.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T02:41:05.126Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-10T02:41:05.126Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "HttpServiceBase.cs",
               "DocumentMoniker": "D:\\Canapi_Joshua_Intern_PUPSMB\\MAUI BACK OFFICE\\StockCounterBackOffice\\Services\\HttpServiceBase.cs",
               "RelativeDocumentMoniker": "StockCounterBackOffice\\Services\\HttpServiceBase.cs",
               "ToolTip": "D:\\Canapi_Joshua_Intern_PUPSMB\\MAUI BACK OFFICE\\StockCounterBackOffice\\Services\\HttpServiceBase.cs",
               "RelativeToolTip": "StockCounterBackOffice\\Services\\HttpServiceBase.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T02:41:03.793Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-10T02:41:03.793Z"
             },
             {
               "$type": "Document",
@@ -198,12 +189,11 @@
               "ToolTip": "D:\\Canapi_Joshua_Intern_PUPSMB\\MAUI BACK OFFICE\\StockCounterBackOffice\\Helpers\\StockHelper.cs",
               "RelativeToolTip": "StockCounterBackOffice\\Helpers\\StockHelper.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T09:50:25.218Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-09T09:50:25.218Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\Canapi_Joshua_Intern_PUPSMB\\MAUI BACK OFFICE\\StockCounterBackOffice\\Form1.cs",
               "RelativeDocumentMoniker": "StockCounterBackOffice\\Form1.cs",
@@ -215,7 +205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\Canapi_Joshua_Intern_PUPSMB\\MAUI BACK OFFICE\\StockCounterBackOffice\\Form1.cs",
               "RelativeDocumentMoniker": "StockCounterBackOffice\\Form1.cs",
@@ -227,15 +217,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "ConnectionStringHelper.cs",
               "DocumentMoniker": "D:\\Canapi_Joshua_Intern_PUPSMB\\MAUI BACK OFFICE\\StockCounterBackOffice\\Helpers\\ConnectionStringHelper.cs",
               "RelativeDocumentMoniker": "StockCounterBackOffice\\Helpers\\ConnectionStringHelper.cs",
               "ToolTip": "D:\\Canapi_Joshua_Intern_PUPSMB\\MAUI BACK OFFICE\\StockCounterBackOffice\\Helpers\\ConnectionStringHelper.cs",
               "RelativeToolTip": "StockCounterBackOffice\\Helpers\\ConnectionStringHelper.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T09:34:19.477Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-09T09:34:19.477Z"
             }
           ]
         },
