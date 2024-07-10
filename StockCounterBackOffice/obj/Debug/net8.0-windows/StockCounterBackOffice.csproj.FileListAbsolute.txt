@@ -82,3 +82,4 @@ C:\ESTEBAN_JASMINE_PUPSMB\C#\MAUI\Stock-Counter-Back-Office\StockCounterBackOffi
 C:\ESTEBAN_JASMINE_PUPSMB\C#\MAUI\Stock-Counter-Back-Office\StockCounterBackOffice\obj\Debug\net8.0-windows\StockCounterBackOffice.pdb
 C:\ESTEBAN_JASMINE_PUPSMB\C#\MAUI\Stock-Counter-Back-Office\StockCounterBackOffice\obj\Debug\net8.0-windows\StockCounterBackOffice.genruntimeconfig.cache
 C:\ESTEBAN_JASMINE_PUPSMB\C#\MAUI\Stock-Counter-Back-Office\StockCounterBackOffice\obj\Debug\net8.0-windows\ref\StockCounterBackOffice.dll
+D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\obj\Debug\net8.0-windows\StockCounterBackOffice.Properties.Resources.resources

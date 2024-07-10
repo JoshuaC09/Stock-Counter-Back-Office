@@ -43,7 +43,7 @@
             InitializeButton.Font = new Font("Tahoma", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             InitializeButton.ForeColor = Color.White;
             InitializeButton.Location = new Point(414, 115);
-            InitializeButton.Margin = new Padding(4, 4, 4, 4);
+            InitializeButton.Margin = new Padding(4);
             InitializeButton.Name = "InitializeButton";
             InitializeButton.Size = new Size(165, 52);
             InitializeButton.TabIndex = 0;
@@ -58,7 +58,7 @@
             NewButton.Font = new Font("Tahoma", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             NewButton.ForeColor = Color.White;
             NewButton.Location = new Point(25, 115);
-            NewButton.Margin = new Padding(4, 4, 4, 4);
+            NewButton.Margin = new Padding(4);
             NewButton.Name = "NewButton";
             NewButton.Size = new Size(165, 52);
             NewButton.TabIndex = 1;
@@ -73,7 +73,7 @@
             ExportButton.Font = new Font("Tahoma", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             ExportButton.ForeColor = Color.White;
             ExportButton.Location = new Point(222, 115);
-            ExportButton.Margin = new Padding(4, 4, 4, 4);
+            ExportButton.Margin = new Padding(4);
             ExportButton.Name = "ExportButton";
             ExportButton.Size = new Size(165, 52);
             ExportButton.TabIndex = 2;
@@ -86,7 +86,7 @@
             LoadConfigFileButton.Cursor = Cursors.Hand;
             LoadConfigFileButton.FlatAppearance.BorderColor = Color.Gray;
             LoadConfigFileButton.Location = new Point(156, 216);
-            LoadConfigFileButton.Margin = new Padding(4, 4, 4, 4);
+            LoadConfigFileButton.Margin = new Padding(4);
             LoadConfigFileButton.Name = "LoadConfigFileButton";
             LoadConfigFileButton.Size = new Size(273, 55);
             LoadConfigFileButton.TabIndex = 3;
@@ -107,10 +107,11 @@
             // 
             // Form1
             // 
+            AllowDrop = true;
             AutoScaleDimensions = new SizeF(11F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.GhostWhite;
-            ClientSize = new Size(612, 292);
+            ClientSize = new Size(612, 326);
             Controls.Add(label1);
             Controls.Add(LoadConfigFileButton);
             Controls.Add(ExportButton);
@@ -118,11 +119,11 @@
             Controls.Add(InitializeButton);
             Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
-            Margin = new Padding(4, 4, 4, 4);
+            ImeMode = ImeMode.Off;
+            Margin = new Padding(4);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Inventory Back Office";
-            WindowState = FormWindowState.Minimized;
             ResumeLayout(false);
             PerformLayout();
         }

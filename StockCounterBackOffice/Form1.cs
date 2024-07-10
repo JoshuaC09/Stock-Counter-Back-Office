@@ -80,7 +80,7 @@ namespace StockCounterBackOffice
                 try
                 {
                     await _stockHelper.InitializeInventoryAsync();
-                    MessageBox.Show("Inventory initialized successfully.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Inventory data deleted successfully.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 catch (Exception ex)
                 {
