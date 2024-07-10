@@ -1,9 +1,5 @@
-using System;
-using System.Drawing;
-using System.IO;
-using System.Net.Http;
 using System.Text;
-using System.Windows.Forms;
+using OfficeOpenXml;
 using StockCounterBackOffice.Helpers;
 using StockCounterBackOffice.Interfaces;
 using StockCounterBackOffice.Models;
@@ -112,10 +108,47 @@ namespace StockCounterBackOffice
             }
         }
 
-        private void ExportButton_Click(object sender, EventArgs e)
+        private async void ExportButton_Click(object sender, EventArgs e)
         {
-            // Implement the functionality for ExportButton if needed
+            try
+            {
+                var exportedItems = await _stockHelper.ExportInventoryAsync();
+                if (exportedItems == null)
+                {
+                    MessageBox.Show("No data to export.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                using (var sfd = new SaveFileDialog() { Filter = "Excel Workbook|*.xlsx" })
+                {
+                    if (sfd.ShowDialog() == DialogResult.OK)
+                    {
+                        ExcelPackage.LicenseContext = LicenseContext.NonCommercial; 
+
+                        using (var package = new OfficeOpenXml.ExcelPackage())
+                        {
+                            var worksheet = package.Workbook.Worksheets.Add("Inventory");
+                            worksheet.Cells["A1"].LoadFromCollection(exportedItems, true);
+
+                         
+                            using (var range = worksheet.Cells["A1:L1"]) 
+                            {
+                                range.Style.Fill.PatternType = OfficeOpenXml.Style.ExcelFillStyle.Solid;
+                                range.Style.Fill.BackgroundColor.SetColor(System.Drawing.Color.Yellow);
+                            }
+
+                            package.SaveAs(new FileInfo(sfd.FileName));
+                        }
+                        MessageBox.Show("Inventory exported successfully.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred while exporting the inventory:\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
 
         private void DisableOtherButtons()
         {

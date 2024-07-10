@@ -127,5 +127,17 @@ namespace StockCounterBackOffice.Helpers
                 MessageBox.Show("Unable to update inventory. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+        public async Task<List<ExportedItem>> ExportInventoryAsync()
+        {
+            try
+            {
+                return await _apiService.ExportInventoryAsync();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Unable to export inventory. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return null;
+            }
+        }
     }
 }
