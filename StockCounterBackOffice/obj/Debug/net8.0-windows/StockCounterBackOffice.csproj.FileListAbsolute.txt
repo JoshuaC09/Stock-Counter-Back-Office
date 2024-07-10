@@ -49,3 +49,36 @@ D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\bin\Debug
 D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\bin\Debug\net8.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
 D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
 D:\Canapi_Joshua_Intern_PUPSMB\MAUI BACK OFFICE\StockCounterBackOffice\bin\Debug\net8.0-windows\Microsoft.IO.RecyclableMemoryStream.dll
+C:\ESTEBAN_JASMINE_PUPSMB\C#\MAUI\Stock-Counter-Back-Office\StockCounterBackOffice\bin\Debug\net8.0-windows\StockCounterBackOffice.exe
+C:\ESTEBAN_JASMINE_PUPSMB\C#\MAUI\Stock-Counter-Back-Office\StockCounterBackOffice\bin\Debug\net8.0-windows\StockCounterBackOffice.deps.json
+C:\ESTEBAN_JASMINE_PUPSMB\C#\MAUI\Stock-Counter-Back-Office\StockCounterBackOffice\bin\Debug\net8.0-windows\StockCounterBackOffice.runtimeconfig.json
+C:\ESTEBAN_JASMINE_PUPSMB\C#\MAUI\Stock-Counter-Back-Office\StockCounterBackOffice\bin\Debug\net8.0-windows\StockCounterBackOffice.dll
+C:\ESTEBAN_JASMINE_PUPSMB\C#\MAUI\Stock-Counter-Back-Office\StockCounterBackOffice\bin\Debug\net8.0-windows\StockCounterBackOffice.pdb
+C:\ESTEBAN_JASMINE_PUPSMB\C#\MAUI\Stock-Counter-Back-Office\StockCounterBackOffice\bin\Debug\net8.0-windows\EPPlus.dll
+C:\ESTEBAN_JASMINE_PUPSMB\C#\MAUI\Stock-Counter-Back-Office\StockCounterBackOffice\bin\Debug\net8.0-windows\EPPlus.Interfaces.dll
+C:\ESTEBAN_JASMINE_PUPSMB\C#\MAUI\Stock-Counter-Back-Office\StockCounterBackOffice\bin\Debug\net8.0-windows\EPPlus.System.Drawing.dll
+C:\ESTEBAN_JASMINE_PUPSMB\C#\MAUI\Stock-Counter-Back-Office\StockCounterBackOffice\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.dll
+C:\ESTEBAN_JASMINE_PUPSMB\C#\MAUI\Stock-Counter-Back-Office\StockCounterBackOffice\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\ESTEBAN_JASMINE_PUPSMB\C#\MAUI\Stock-Counter-Back-Office\StockCounterBackOffice\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\ESTEBAN_JASMINE_PUPSMB\C#\MAUI\Stock-Counter-Back-Office\StockCounterBackOffice\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Json.dll
+C:\ESTEBAN_JASMINE_PUPSMB\C#\MAUI\Stock-Counter-Back-Office\StockCounterBackOffice\bin\Debug\net8.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\ESTEBAN_JASMINE_PUPSMB\C#\MAUI\Stock-Counter-Back-Office\StockCounterBackOffice\bin\Debug\net8.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+C:\ESTEBAN_JASMINE_PUPSMB\C#\MAUI\Stock-Counter-Back-Office\StockCounterBackOffice\bin\Debug\net8.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\ESTEBAN_JASMINE_PUPSMB\C#\MAUI\Stock-Counter-Back-Office\StockCounterBackOffice\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\ESTEBAN_JASMINE_PUPSMB\C#\MAUI\Stock-Counter-Back-Office\StockCounterBackOffice\bin\Debug\net8.0-windows\Microsoft.IO.RecyclableMemoryStream.dll
+C:\ESTEBAN_JASMINE_PUPSMB\C#\MAUI\Stock-Counter-Back-Office\StockCounterBackOffice\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\ESTEBAN_JASMINE_PUPSMB\C#\MAUI\Stock-Counter-Back-Office\StockCounterBackOffice\obj\Debug\net8.0-windows\StockCounterBackOffice.csproj.AssemblyReference.cache
+C:\ESTEBAN_JASMINE_PUPSMB\C#\MAUI\Stock-Counter-Back-Office\StockCounterBackOffice\obj\Debug\net8.0-windows\StockCounterBackOffice.Form1.resources
+C:\ESTEBAN_JASMINE_PUPSMB\C#\MAUI\Stock-Counter-Back-Office\StockCounterBackOffice\obj\Debug\net8.0-windows\StockCounterBackOffice.Properties.Resources.resources
+C:\ESTEBAN_JASMINE_PUPSMB\C#\MAUI\Stock-Counter-Back-Office\StockCounterBackOffice\obj\Debug\net8.0-windows\StockCounterBackOffice.csproj.GenerateResource.cache
+C:\ESTEBAN_JASMINE_PUPSMB\C#\MAUI\Stock-Counter-Back-Office\StockCounterBackOffice\obj\Debug\net8.0-windows\StockCounterBackOffice.GeneratedMSBuildEditorConfig.editorconfig
+C:\ESTEBAN_JASMINE_PUPSMB\C#\MAUI\Stock-Counter-Back-Office\StockCounterBackOffice\obj\Debug\net8.0-windows\StockCounterBackOffice.AssemblyInfoInputs.cache
+C:\ESTEBAN_JASMINE_PUPSMB\C#\MAUI\Stock-Counter-Back-Office\StockCounterBackOffice\obj\Debug\net8.0-windows\StockCounterBackOffice.AssemblyInfo.cs
+C:\ESTEBAN_JASMINE_PUPSMB\C#\MAUI\Stock-Counter-Back-Office\StockCounterBackOffice\obj\Debug\net8.0-windows\StockCounterBackOffice.csproj.CoreCompileInputs.cache
+C:\ESTEBAN_JASMINE_PUPSMB\C#\MAUI\Stock-Counter-Back-Office\StockCounterBackOffice\obj\Debug\net8.0-windows\StockCounterBackOffice.sourcelink.json
+C:\ESTEBAN_JASMINE_PUPSMB\C#\MAUI\Stock-Counter-Back-Office\StockCounterBackOffice\obj\Debug\net8.0-windows\StockCou.3D3DF5E1.Up2Date
+C:\ESTEBAN_JASMINE_PUPSMB\C#\MAUI\Stock-Counter-Back-Office\StockCounterBackOffice\obj\Debug\net8.0-windows\StockCounterBackOffice.dll
+C:\ESTEBAN_JASMINE_PUPSMB\C#\MAUI\Stock-Counter-Back-Office\StockCounterBackOffice\obj\Debug\net8.0-windows\refint\StockCounterBackOffice.dll
+C:\ESTEBAN_JASMINE_PUPSMB\C#\MAUI\Stock-Counter-Back-Office\StockCounterBackOffice\obj\Debug\net8.0-windows\StockCounterBackOffice.pdb
+C:\ESTEBAN_JASMINE_PUPSMB\C#\MAUI\Stock-Counter-Back-Office\StockCounterBackOffice\obj\Debug\net8.0-windows\StockCounterBackOffice.genruntimeconfig.cache
+C:\ESTEBAN_JASMINE_PUPSMB\C#\MAUI\Stock-Counter-Back-Office\StockCounterBackOffice\obj\Debug\net8.0-windows\ref\StockCounterBackOffice.dll
