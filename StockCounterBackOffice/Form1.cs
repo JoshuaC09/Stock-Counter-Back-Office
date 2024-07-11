@@ -12,22 +12,40 @@ namespace StockCounterBackOffice
     {
         private readonly StockHelper _stockHelper;
         private Label loadingLabel;
-
+        private Label statusLabel;
+        private Button initializeButton;
+        private Button newButton;
+        private Button exportButton;
         public Form1()
         {
             InitializeComponent();
-            DisableOtherButtons();
+
 
             loadingLabel = new Label()
             {
-                Text = "Loading, please wait...",
-                Visible = false,
+                Text = "Connecting, please wait...",
+                Visible = true,
                 AutoSize = true
             };
             this.Controls.Add(loadingLabel);
 
-        
-            UpdateLoadingLabelPosition();
+            statusLabel = new Label()
+            {
+                Text = "",
+                Visible = true,
+                AutoSize = true
+            };
+            this.Controls.Add(statusLabel);
+
+
+            initializeButton = this.Controls.Find("InitializeButton", true).FirstOrDefault() as Button;
+            newButton = this.Controls.Find("NewButton", true).FirstOrDefault() as Button;
+            exportButton = this.Controls.Find("ExportButton", true).FirstOrDefault() as Button;
+
+            // Disable buttons initially
+            SetButtonsEnabled(false);
+
+            UpdateLabelPositions();
 
             string configFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "config.bgc");
 
@@ -38,38 +56,50 @@ namespace StockCounterBackOffice
             ApiService apiService = new ApiService(httpClient, tokenService);
 
             _stockHelper = new StockHelper(apiService, securityService, configFilePath);
+
+            LoadConfigFileAsync();
         }
 
-        private void UpdateLoadingLabelPosition()
+        private void SetButtonsEnabled(bool enabled)
         {
-            int buttonCenterX = LoadConfigFileButton.Location.X + (LoadConfigFileButton.Width / 2);
-            int labelX = buttonCenterX - (loadingLabel.Width / 2);
-            int labelY = LoadConfigFileButton.Location.Y + LoadConfigFileButton.Height + 10;
-
-            loadingLabel.Location = new Point(labelX, labelY);
+            if (initializeButton != null) initializeButton.Enabled = enabled;
+            if (newButton != null) newButton.Enabled = enabled;
+            if (exportButton != null) exportButton.Enabled = enabled;
         }
 
-        private async void LoadConfigFileButton_Click(object sender, EventArgs e)
+        private void UpdateLabelPositions()
         {
-            LoadConfigFileButton.Enabled = false;
+            int centerX = this.ClientSize.Width / 2;
 
-            loadingLabel.Visible = true;
-            UpdateLoadingLabelPosition(); 
+            int loadingLabelX = centerX - (loadingLabel.Width / 2);
+            int loadingLabelY = 10; // Adjust the Y position as needed for the upper center
+            loadingLabel.Location = new Point(loadingLabelX, loadingLabelY);
 
+            int statusLabelX = centerX - (statusLabel.Width / 2);
+            int statusLabelY = loadingLabelY + loadingLabel.Height + 10; // Adjust the Y position as needed
+            statusLabel.Location = new Point(statusLabelX, statusLabelY);
+        }
+
+        private async void LoadConfigFileAsync()
+        {
+            SetButtonsEnabled(false); // Disable buttons while loading
             bool isConnected = await _stockHelper.LoadConfigFileAsync();
-
             loadingLabel.Visible = false;
 
-            if (isConnected)
+            if (!isConnected)
             {
-                EnableOtherButtons();
-                LoadConfigFileButton.Visible = false;
+                statusLabel.Text = "Not connected to any server.";
+                statusLabel.ForeColor = System.Drawing.Color.Red;
+                SetButtonsEnabled(false); // Ensure buttons are disabled if not connected
             }
             else
             {
-       
-                LoadConfigFileButton.Enabled = true;
+                statusLabel.Text = "Connected to the server.";
+                statusLabel.ForeColor = System.Drawing.Color.Green;
+                SetButtonsEnabled(true); 
             }
+
+            UpdateLabelPositions(); 
         }
 
         private async void InitializeButton_Click(object sender, EventArgs e)
@@ -89,7 +119,6 @@ namespace StockCounterBackOffice
             }
         }
 
-
         private async void NewButton_Click(object sender, EventArgs e)
         {
             var result = MessageBox.Show("Are you sure you want to post new inventory data?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -106,6 +135,7 @@ namespace StockCounterBackOffice
                 }
             }
         }
+
         private async void ExportButton_Click(object sender, EventArgs e)
         {
             try
@@ -129,9 +159,9 @@ namespace StockCounterBackOffice
 
                             var headers = new string[]
                             {
-                        "Item No", "Item User Define", "Barcode", "Description",
-                        "BUOM", "Stocks(Pcs)", "Lot #", "Expiration",
-                        "Variance", "Rack", "CFactor", "Cntr"
+                                "Item No", "Item User Define", "Barcode", "Description",
+                                "BUOM", "Stocks(Pcs)", "Lot #", "Expiration",
+                                "Variance", "Rack", "CFactor", "Cntr"
                             };
 
                             for (int i = 0; i < headers.Length; i++)
@@ -139,7 +169,6 @@ namespace StockCounterBackOffice
                                 worksheet.Cells[1, i + 1].Value = headers[i];
                             }
 
-                         
                             for (int i = 0; i < exportedItems.Count; i++)
                             {
                                 worksheet.Cells[i + 2, 1].Value = exportedItems[i].ItemNo;
@@ -172,20 +201,6 @@ namespace StockCounterBackOffice
             {
                 MessageBox.Show($"An error occurred while exporting the inventory:\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        private void DisableOtherButtons()
-        {
-            InitializeButton.Enabled = false;
-            NewButton.Enabled = false;
-            ExportButton.Enabled = false;
-        }
-
-        private void EnableOtherButtons()
-        {
-            InitializeButton.Enabled = true;
-            NewButton.Enabled = true;
-            ExportButton.Enabled = true;
         }
     }
 }

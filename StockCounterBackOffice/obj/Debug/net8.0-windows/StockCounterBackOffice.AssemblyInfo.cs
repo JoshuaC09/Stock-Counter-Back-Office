@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StockCounterBackOffice")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+25373030552026dd1cbb53eb1b71e8bccb0f8e32")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+14bbe430000c22d9411f0567d50244578151951b")]
 [assembly: System.Reflection.AssemblyProductAttribute("StockCounterBackOffice")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StockCounterBackOffice")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
