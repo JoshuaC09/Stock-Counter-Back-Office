@@ -14,17 +14,28 @@ namespace StockCounterBackOffice.Services
 
         public async Task<bool> SetConnectionStringAsync(string connectionString)
         {
-            var _baseUrl = GlobalVariable.BaseAddress.ToString();
-            var encodedConnectionString = System.Net.WebUtility.UrlEncode(connectionString);
-            var content = new StringContent(JsonConvert.SerializeObject(new { ConnectionString = encodedConnectionString }), Encoding.UTF8, "application/json");
-            var response = await _httpClient.PostAsync($"{_baseUrl}api/Database/SetConnectionString", content);
-            if (!response.IsSuccessStatusCode)
+            try
             {
-                var errorContent = await response.Content.ReadAsStringAsync();
-                Console.WriteLine($"API call failed: {response.StatusCode}, {errorContent}");
+                var _baseUrl = GlobalVariable.BaseAddress.ToString();
+                var encodedConnectionString = System.Net.WebUtility.UrlEncode(connectionString);
+                var content = new StringContent(JsonConvert.SerializeObject(new { ConnectionString = encodedConnectionString }), Encoding.UTF8, "application/json");
+
+                var response = await _httpClient.PostAsync($"{_baseUrl}api/Database/SetConnectionString", content);
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    var errorContent = await response.Content.ReadAsStringAsync();
+                    Console.WriteLine($"API call failed: {response.StatusCode}, {errorContent}");
+                    return false;
+                }
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Exception occurred: {ex.Message}");
                 return false;
             }
-            return true;
         }
 
         public async Task InitInventoryAsync()

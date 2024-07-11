@@ -19,74 +19,70 @@ namespace StockCounterBackOffice.Helpers
 
         public async Task<bool> LoadConfigFileAsync()
         {
+            string errorMessage = string.Empty;
             try
             {
                 if (!File.Exists(_configFilePath))
                 {
-                    MessageBox.Show("Config file not found. Please make sure the file is in the correct location.", "File Not Found", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return false;
+                    errorMessage = "Config file not found.";
+                    throw new FileNotFoundException(errorMessage);
                 }
 
-                string encryptedContent;
-                try
-                {
-                    encryptedContent = await File.ReadAllTextAsync(_configFilePath);
-                }
-                catch (IOException)
-                {
-                    MessageBox.Show("Unable to read the config file. Please check if the file is accessible.", "File Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return false;
-                }
+                string encryptedContent = await File.ReadAllTextAsync(_configFilePath);
 
-                string decryptedContent;
-                try
-                {
-                    decryptedContent = await _securityService.DecryptAsync(encryptedContent);
-                }
-                catch (Exception)
-                {
-                    MessageBox.Show("Failed to process the config file. Please ensure the file is correct.", "File Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return false;
-                }
+                string decryptedContent = await _securityService.DecryptAsync(encryptedContent);
 
                 string serverValue = ConnectionStringHelper.GetServerValue(decryptedContent);
                 string portNumber = ConnectionStringHelper.GetPortNumber(decryptedContent);
 
                 if (string.IsNullOrEmpty(serverValue) || string.IsNullOrEmpty(decryptedContent))
                 {
-                    MessageBox.Show("Invalid config file content. Please check the file.", "File Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return false;
+                    errorMessage = "Invalid config file content.";
+                    throw new InvalidOperationException(errorMessage);
                 }
 
+                GlobalVariable.BaseAddress = GetBaseAddress(serverValue, portNumber);
 
-                GlobalVariable.BaseAddress = GetBaseAddress(serverValue,portNumber);
-
-                bool isConnected;
-                try
-                {
-                    isConnected = await _apiService.SetConnectionStringAsync(decryptedContent);
-                }
-                catch (HttpRequestException)
-                {
-                    MessageBox.Show("Cannot connect to the server. Please check your network connection.", "Connection Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return false;
-                }
-                catch (Exception)
-                {
-                    MessageBox.Show("Unable to connect to the server. Please try again.", "Connection Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return false;
-                }
+                bool isConnected = await _apiService.SetConnectionStringAsync(decryptedContent);
 
                 if (!isConnected)
                 {
-                    MessageBox.Show("Unable to connect to the server. Please verify the config file.", "Connection Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    errorMessage = "Unable to connect to the server.";
+                    throw new HttpRequestException(errorMessage);
                 }
+
                 return isConnected;
             }
-            catch (Exception)
+            catch (FileNotFoundException ex)
             {
-                MessageBox.Show("An unexpected error occurred. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                errorMessage = ex.Message;
                 return false;
+            }
+            catch (InvalidOperationException ex)
+            {
+                errorMessage = ex.Message;
+                return false;
+            }
+            catch (HttpRequestException ex)
+            {
+                errorMessage = ex.Message;
+                return false;
+            }
+            catch (Exception ex)
+            {
+                errorMessage = $"An unexpected error occurred: {ex.Message}";
+                return false;
+            }
+            finally
+            {
+                if (!string.IsNullOrEmpty(errorMessage))
+                {
+                    var result = MessageBox.Show($"{errorMessage}\nDo you want to continue without connection?", "Error", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+                    if (result == DialogResult.No)
+                    {
+                        Application.Exit();
+                    }
+                }
             }
         }
 
@@ -94,50 +90,28 @@ namespace StockCounterBackOffice.Helpers
         {
             try
             {
-                string serverTemp = $"http://{serverName}:{portNumber}/";
-                return new Uri(serverTemp);
+                string serverTemp = serverName.Trim();
+                return new Uri($"http://{serverTemp}:{portNumber}");
             }
-            catch (UriFormatException)
+            catch (Exception ex)
             {
-                MessageBox.Show("Invalid server address. Please check the config file.", "Configuration Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return null;
+                throw new InvalidOperationException("Invalid server address.", ex);
             }
         }
 
         public async Task InitializeInventoryAsync()
         {
-            try
-            {
-                await _apiService.InitInventoryAsync();
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Unable to initialize inventory. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
+            await _apiService.InitInventoryAsync();
         }
 
         public async Task PostInventoryAsync()
         {
-            try
-            {
-                await _apiService.PostInventoryAsync();
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Unable to update inventory. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
+            await _apiService.PostInventoryAsync();
         }
+
         public async Task<List<ExportedItem>> ExportInventoryAsync()
         {
-            try
-            {
-                return await _apiService.ExportInventoryAsync();
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Unable to export inventory. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return null;
-            }
+            return await _apiService.ExportInventoryAsync();
         }
     }
 }
