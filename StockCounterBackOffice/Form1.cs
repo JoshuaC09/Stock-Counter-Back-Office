@@ -147,7 +147,14 @@ namespace StockCounterBackOffice
                     return;
                 }
 
-                using (var sfd = new SaveFileDialog() { Filter = "Excel Workbook|*.xlsx" })
+            
+                string currentDate = DateTime.Now.ToString("yyyy-MM-dd");
+
+                using (var sfd = new SaveFileDialog()
+                {
+                    Filter = "Excel Workbook|*.xlsx",
+                    FileName = $"Stock_Count_{currentDate}.xlsx" // Set the initial file name
+                })
                 {
                     if (sfd.ShowDialog() == DialogResult.OK)
                     {
@@ -159,9 +166,9 @@ namespace StockCounterBackOffice
 
                             var headers = new string[]
                             {
-                                "Item No", "Item User Define", "Barcode", "Description",
-                                "BUOM", "Stocks(Pcs)", "Lot #", "Expiration",
-                                "Variance", "Rack", "CFactor", "Cntr"
+                        "Item No", "Item User Define", "Barcode", "Description",
+                        "BUOM", "Stocks(Pcs)", "Lot #", "Expiration",
+                        "Variance", "Rack", "CFactor", "Cntr"
                             };
 
                             for (int i = 0; i < headers.Length; i++)
@@ -202,5 +209,6 @@ namespace StockCounterBackOffice
                 MessageBox.Show($"An error occurred while exporting the inventory:\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
     }
 }
