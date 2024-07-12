@@ -44,7 +44,7 @@ namespace StockCounterBackOffice.Helpers
                 using (var range = worksheet.Cells["A1:L1"])
                 {
                     range.Style.Fill.PatternType = OfficeOpenXml.Style.ExcelFillStyle.Solid;
-                    range.Style.Fill.BackgroundColor.SetColor(Color.Yellow);
+                    range.Style.Fill.BackgroundColor.SetColor(Color.LightGray);
                 }
 
                 package.SaveAs(new FileInfo(fileName));
