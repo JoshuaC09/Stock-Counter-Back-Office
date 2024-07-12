@@ -40,7 +40,7 @@ namespace StockCounterBackOffice
             newButton = this.Controls.Find("NewButton", true).FirstOrDefault() as Button;
             exportButton = this.Controls.Find("ExportButton", true).FirstOrDefault() as Button;
 
-            // Disable buttons initially
+         
             SetButtonsEnabled(false);
 
             UpdateLabelPositions();
@@ -70,17 +70,17 @@ namespace StockCounterBackOffice
             int centerX = this.ClientSize.Width / 2;
 
             int loadingLabelX = centerX - (loadingLabel.Width / 2);
-            int loadingLabelY = 10; // Adjust the Y position as needed for the upper center
+            int loadingLabelY = 10; 
             loadingLabel.Location = new Point(loadingLabelX, loadingLabelY);
 
             int statusLabelX = centerX - (statusLabel.Width / 2);
-            int statusLabelY = loadingLabelY + loadingLabel.Height + 10; // Adjust the Y position as needed
+            int statusLabelY = loadingLabelY + loadingLabel.Height + 10; 
             statusLabel.Location = new Point(statusLabelX, statusLabelY);
         }
 
         private async void LoadConfigFileAsync()
         {
-            SetButtonsEnabled(false); // Disable buttons while loading
+            SetButtonsEnabled(false); 
             NewButton.BackColor = System.Drawing.ColorTranslator.FromHtml("#3084d6");
             ExportButton.BackColor = System.Drawing.ColorTranslator.FromHtml("#60c690");
             bool isConnected = await _stockHelper.LoadConfigFileAsync();
@@ -90,7 +90,7 @@ namespace StockCounterBackOffice
             {
                 statusLabel.Text = "Not connected to any server.";
                 statusLabel.ForeColor = System.Drawing.Color.Red;
-                SetButtonsEnabled(false); // Ensure buttons are disabled if not connected
+                SetButtonsEnabled(false); 
             }
             else
             {
@@ -154,7 +154,7 @@ namespace StockCounterBackOffice
                 using (var sfd = new SaveFileDialog()
                 {
                     Filter = "Excel Workbook|*.xlsx",
-                    FileName = $"Stock_Count_{currentDate}.xlsx" // Set the initial file name
+                    FileName = $"Stock_Count_{currentDate}.xlsx" 
                 })
                 {
                     if (sfd.ShowDialog() == DialogResult.OK)

@@ -8,7 +8,6 @@
         public string? Description { get; set; }
         public string? BUOM { get; set; }
         public int? Stocks { get; set; }
-
         public string? LotNo { get; set; }
         public string? Expiration { get; set; }
         public int? Variance { get; set; }
