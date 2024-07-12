@@ -2,30 +2,30 @@
 {
     public static class ConnectionStringHelper
     {
-        public static string GetServerValue(string connectionString)
+        public static string GetConnectionStringParameter(string connectionString, string parameterName)
         {
             var parameters = connectionString.Split(';');
             foreach (var parameter in parameters)
             {
-                if (parameter.StartsWith("Server=", StringComparison.OrdinalIgnoreCase))
+                if (parameter.StartsWith($"{parameterName}=", StringComparison.OrdinalIgnoreCase))
                 {
-                    return parameter.Substring("Server=".Length);
+                    return parameter.Substring($"{parameterName}=".Length);
                 }
             }
             return null;
         }
 
-        public static string GetPortNumber(string connectionString)
+        public static Uri GetBaseAddress(string serverName, string portNumber)
         {
-            var parameters = connectionString.Split(';');
-            foreach (var parameter in parameters)
+            try
             {
-                if (parameter.StartsWith("PortNumber=", StringComparison.OrdinalIgnoreCase))
-                {
-                    return parameter.Substring("PortNumber=".Length);
-                }
+                string serverTemp = serverName.Trim();
+                return new Uri($"http://{serverTemp}:{portNumber}");
             }
-            return null;
+            catch (Exception ex)
+            {
+                throw new InvalidOperationException("Invalid server address.", ex);
+            }
         }
     }
 }
