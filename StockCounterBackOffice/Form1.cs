@@ -1,3 +1,4 @@
+using System.Media;
 using System.Text;
 using OfficeOpenXml;
 using StockCounterBackOffice.Helpers;
@@ -83,6 +84,8 @@ namespace StockCounterBackOffice
         private async void LoadConfigFileAsync()
         {
             SetButtonsEnabled(false); // Disable buttons while loading
+            NewButton.BackColor = System.Drawing.ColorTranslator.FromHtml("#3084d6");
+            ExportButton.BackColor = System.Drawing.ColorTranslator.FromHtml("#60c690");
             bool isConnected = await _stockHelper.LoadConfigFileAsync();
             loadingLabel.Visible = false;
 
@@ -96,6 +99,8 @@ namespace StockCounterBackOffice
             {
                 statusLabel.Text = "Connected to the server.";
                 statusLabel.ForeColor = System.Drawing.Color.Green;
+                NewButton.BackColor = System.Drawing.ColorTranslator.FromHtml("#0066cc");
+                ExportButton.BackColor = System.Drawing.ColorTranslator.FromHtml("#00a24d");
                 SetButtonsEnabled(true); 
             }
 
