@@ -1,5 +1,4 @@
 using System.Text;
-using OfficeOpenXml;
 using StockCounterBackOffice.Helpers;
 using StockCounterBackOffice.Interfaces;
 using StockCounterBackOffice.Models;
@@ -16,10 +15,10 @@ namespace StockCounterBackOffice
         private Button initializeButton;
         private Button newButton;
         private Button exportButton;
+
         public Form1()
         {
             InitializeComponent();
-
 
             loadingLabel = new Label()
             {
@@ -36,7 +35,6 @@ namespace StockCounterBackOffice
                 AutoSize = true
             };
             this.Controls.Add(statusLabel);
-
 
             initializeButton = this.Controls.Find("InitializeButton", true).FirstOrDefault() as Button;
             newButton = this.Controls.Find("NewButton", true).FirstOrDefault() as Button;
@@ -83,6 +81,8 @@ namespace StockCounterBackOffice
         private async void LoadConfigFileAsync()
         {
             SetButtonsEnabled(false); // Disable buttons while loading
+            NewButton.BackColor = System.Drawing.ColorTranslator.FromHtml("#3084d6");
+            ExportButton.BackColor = System.Drawing.ColorTranslator.FromHtml("#60c690");
             bool isConnected = await _stockHelper.LoadConfigFileAsync();
             loadingLabel.Visible = false;
 
@@ -96,10 +96,12 @@ namespace StockCounterBackOffice
             {
                 statusLabel.Text = "Connected to the server.";
                 statusLabel.ForeColor = System.Drawing.Color.Green;
-                SetButtonsEnabled(true); 
+                NewButton.BackColor = System.Drawing.ColorTranslator.FromHtml("#0066cc");
+                ExportButton.BackColor = System.Drawing.ColorTranslator.FromHtml("#00a24d");
+                SetButtonsEnabled(true);
             }
 
-            UpdateLabelPositions(); 
+            UpdateLabelPositions();
         }
 
         private async void InitializeButton_Click(object sender, EventArgs e)
@@ -141,13 +143,12 @@ namespace StockCounterBackOffice
             try
             {
                 var exportedItems = await _stockHelper.ExportInventoryAsync();
-                if (exportedItems == null)
+                if (exportedItems == null || !exportedItems.Any())
                 {
                     MessageBox.Show("No data to export.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
 
-            
                 string currentDate = DateTime.Now.ToString("yyyy-MM-dd");
 
                 using (var sfd = new SaveFileDialog()
@@ -158,48 +159,7 @@ namespace StockCounterBackOffice
                 {
                     if (sfd.ShowDialog() == DialogResult.OK)
                     {
-                        ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
-
-                        using (var package = new OfficeOpenXml.ExcelPackage())
-                        {
-                            var worksheet = package.Workbook.Worksheets.Add("Inventory");
-
-                            var headers = new string[]
-                            {
-                        "Item No", "Item User Define", "Barcode", "Description",
-                        "BUOM", "Stocks(Pcs)", "Lot #", "Expiration",
-                        "Variance", "Rack", "CFactor", "Cntr"
-                            };
-
-                            for (int i = 0; i < headers.Length; i++)
-                            {
-                                worksheet.Cells[1, i + 1].Value = headers[i];
-                            }
-
-                            for (int i = 0; i < exportedItems.Count; i++)
-                            {
-                                worksheet.Cells[i + 2, 1].Value = exportedItems[i].ItemNo;
-                                worksheet.Cells[i + 2, 2].Value = exportedItems[i].ItemUserDefine;
-                                worksheet.Cells[i + 2, 3].Value = exportedItems[i].Barcode;
-                                worksheet.Cells[i + 2, 4].Value = exportedItems[i].Description;
-                                worksheet.Cells[i + 2, 5].Value = exportedItems[i].BUOM;
-                                worksheet.Cells[i + 2, 6].Value = exportedItems[i].Stocks;
-                                worksheet.Cells[i + 2, 7].Value = exportedItems[i].Lot;
-                                worksheet.Cells[i + 2, 8].Value = exportedItems[i].Expiration;
-                                worksheet.Cells[i + 2, 9].Value = exportedItems[i].Variance;
-                                worksheet.Cells[i + 2, 10].Value = exportedItems[i].Rack;
-                                worksheet.Cells[i + 2, 11].Value = exportedItems[i].CFactor;
-                                worksheet.Cells[i + 2, 12].Value = exportedItems[i].Counter;
-                            }
-
-                            using (var range = worksheet.Cells["A1:L1"])
-                            {
-                                range.Style.Fill.PatternType = OfficeOpenXml.Style.ExcelFillStyle.Solid;
-                                range.Style.Fill.BackgroundColor.SetColor(System.Drawing.Color.Yellow);
-                            }
-
-                            package.SaveAs(new FileInfo(sfd.FileName));
-                        }
+                        ExportHelper.ExportToExcel(exportedItems, sfd.FileName);
                         MessageBox.Show("Inventory exported successfully.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
@@ -209,6 +169,5 @@ namespace StockCounterBackOffice
                 MessageBox.Show($"An error occurred while exporting the inventory:\n{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
     }
 }

@@ -40,10 +40,10 @@
             InitializeButton.Cursor = Cursors.Hand;
             InitializeButton.Font = new Font("Tahoma", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             InitializeButton.ForeColor = Color.Black;
-            InitializeButton.Location = new Point(360, 233);
+            InitializeButton.Location = new Point(485, 267);
             InitializeButton.Margin = new Padding(4);
             InitializeButton.Name = "InitializeButton";
-            InitializeButton.Size = new Size(139, 34);
+            InitializeButton.Size = new Size(103, 34);
             InitializeButton.TabIndex = 0;
             InitializeButton.Text = "Initialize";
             InitializeButton.UseVisualStyleBackColor = false;

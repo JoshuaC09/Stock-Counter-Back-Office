@@ -29,11 +29,10 @@ namespace StockCounterBackOffice.Helpers
                 }
 
                 string encryptedContent = await File.ReadAllTextAsync(_configFilePath);
-
                 string decryptedContent = await _securityService.DecryptAsync(encryptedContent);
 
-                string serverValue = ConnectionStringHelper.GetServerValue(decryptedContent);
-                string portNumber = ConnectionStringHelper.GetPortNumber(decryptedContent);
+                string serverValue = ConnectionStringHelper.GetConnectionStringParameter(decryptedContent, "Server");
+                string portNumber = ConnectionStringHelper.GetConnectionStringParameter(decryptedContent, "PortNumber");
 
                 if (string.IsNullOrEmpty(serverValue) || string.IsNullOrEmpty(decryptedContent))
                 {
@@ -41,7 +40,7 @@ namespace StockCounterBackOffice.Helpers
                     throw new InvalidOperationException(errorMessage);
                 }
 
-                GlobalVariable.BaseAddress = GetBaseAddress(serverValue, portNumber);
+                GlobalVariable.BaseAddress = ConnectionStringHelper.GetBaseAddress(serverValue, portNumber);
 
                 bool isConnected = await _apiService.SetConnectionStringAsync(decryptedContent);
 
@@ -53,24 +52,9 @@ namespace StockCounterBackOffice.Helpers
 
                 return isConnected;
             }
-            catch (FileNotFoundException ex)
-            {
-                errorMessage = ex.Message;
-                return false;
-            }
-            catch (InvalidOperationException ex)
-            {
-                errorMessage = ex.Message;
-                return false;
-            }
-            catch (HttpRequestException ex)
-            {
-                errorMessage = ex.Message;
-                return false;
-            }
             catch (Exception ex)
             {
-                errorMessage = $"An unexpected error occurred: {ex.Message}";
+                errorMessage = ex.Message;
                 return false;
             }
             finally
@@ -83,19 +67,6 @@ namespace StockCounterBackOffice.Helpers
                         Application.Exit();
                     }
                 }
-            }
-        }
-
-        public static Uri GetBaseAddress(string serverName, string portNumber)
-        {
-            try
-            {
-                string serverTemp = serverName.Trim();
-                return new Uri($"http://{serverTemp}:{portNumber}");
-            }
-            catch (Exception ex)
-            {
-                throw new InvalidOperationException("Invalid server address.", ex);
             }
         }
 
